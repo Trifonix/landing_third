@@ -1,2 +1,7 @@
-node_modules
 dist
+node_modules
+style.css
+style.min.css
+style.min.css.map
+*.json
+gulpfile.js
