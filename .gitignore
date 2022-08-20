@@ -1,5 +1,5 @@
 dist
 node_modules
-*.css
+src/css
 *.json
 gulpfile.js

@@ -10,6 +10,127 @@
     <link rel="stylesheet" href="./src/css/style.min.css">
 </head>
 <body>
-    
+    <!-- Создаем первый блок "промо" - первый экран с задним фоном -->
+    <section class="promo">
+        <!-- Добавляем первый "контейнер" в проект -->
+        <div class="container">
+            <!-- Создаем внутренний блок "header" -->
+            <header class="header">
+                <!-- Внутри создаем элементы -->
+                <!-- Первый элемент: логотип-ссылка -->
+                <a href="#" class="header__logo">
+                    <!-- Добавляем картинку -->
+                    <img src="./src/icons/logo.png" alt="logo">
+                </a>
+                <!-- Второй элемент: блок с информацией -->
+                <div class="header__official">
+                    <!-- Добавляем основной текст -->
+                    Официальный представитель
+                    <!-- Добавляем дополнительный текст с выделением -->
+                    <span>Garmin, Polar, Suunto</span>
+                </div>
+                <!-- Третий элемент: блок с контактами -->
+                <div class="header__contacts">
+                    <!-- Создаем телефон отдельным элементом-ссылкой -->
+                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
+                    <!-- Создаем кнопку в виде отдельного независимого блока -->
+                    <button class="button">Заказать звонок</button>
+                </div>
+            </header>
+
+            <!-- Создаем обёртку для выравнивания элементов по правому краю -->
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Подбор пульсометра</h1>
+                <h2 class="promo__subheader">С учётом Вашего уровня подготовки</h2>
+
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="./src/icons/main_screen/timer.png" alt="timer">
+                        Время подбора:
+                        10 минут
+                    </div>
+                    <div class="promo__icon">
+                        <img src="/src/icons/main_screen/hand-cart.png" alt="hand-cart">
+                        Бесплатная
+                        доставка
+                    </div>
+                    <div class="promo__icon">
+                        <img src="/src/icons/main_screen/messages.png" alt="messages">
+                        Ответим
+                        на все вопросы
+                    </div>
+                </div>
+
+                <!-- Добавляем кнопку с модификатором _main -->
+                <button class="button button_main">Заказать консультацию</button>
+
+                <div class="promo__link">
+                    или
+                    <a href="#">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Создаем второй блок "преимущества" - второй экран с тремя элементами -->
+    <section class="odds">
+        <div class="container">
+            <h2 class="title">Наши преимущества</h2>
+            <!-- Добавляем обертку для внутренних элементов -->
+            <div class="odds__wrapper">
+                <div class="odds__item">
+                    <img src="./src/icons/advantages/cup.png" alt="cup" class="odds__icon">
+                    <div class="odds__subtitle">
+                        Делимся опытом                    
+                    </div>
+                    <div class="odds__description">
+                        Наши сотрудники всегда готовы поделиться своим опытом, 
+                        так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
+                    </div>
+                </div>
+                <div class="odds__item">
+                    <img src="./src/icons/advantages/heart.png" alt="heart" class="odds__icon">
+                    <div class="odds__subtitle">
+                        Заботимся о здоровье                    
+                    </div>
+                    <div class="odds__description">
+                        Мы работаем для того, 
+                        чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+                    </div>
+                </div>
+                <div class="odds__item">
+                    <img src="./src/icons/advantages/shoe.png" alt="shoe" class="odds__icon">
+                    <div class="odds__subtitle">
+                        Учим бегать                    
+                    </div>
+                    <div class="odds__description">
+                        Помогаем с обучением<br> 
+                        правильной технике бега!<br>
+                        Дружим с крупнейшей школой бега в России - 
+                        <a href="#">I LOVE RUNNING</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Создаем секцию с формой -->
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title_left">
+                Получите бесплатную консультацию<br>
+                по подбору пульсометра
+            </h2>
+            <div class="consultation__descr">
+                Просто заполните форму заявки<br>
+                и мы перезвоним вам в течение 10 минут
+            </div>
+            <form class="feed-form" action="#">
+                <input type="text" placeholder="Ваше имя" required name="name">
+                <input type="number" placeholder="Ваш телефон" required name="phone">
+                <input type="email" placeholder="Ваш E-mail" required name="email">
+                <button class="button button__submit" type="submit">Заказать консультацию</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

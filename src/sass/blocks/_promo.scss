@@ -1,6 +1,8 @@
+// Стилизуем класс promo
 .promo {
     min-height: 650px;
-    padding: 21px 0 93px 0;
+    padding-top: 21px;
+    padding-bottom: 93px;
     background: url(../img/main.jpg) center (center/cover) no-repeat;
     &__wrapper {
         display: flex;
@@ -9,18 +11,18 @@
         margin-top: 90px;
     }
     &__header {
-        color: #ffffff;
+        color: #fff;
         font-size: 42px;
         font-weight: 700;
-        text-transform: uppercase;
         line-height: 42px;
+        text-transform: uppercase;
     }
     &__subheader {
         margin-top: 17px;
-        color: #ffffff;
+        color: #fff;
         font-size: 24px;
-        line-height: 24px;
         font-weight: 500;
+        line-height: 24px;
         text-transform: uppercase;
     }
     &__icons {
@@ -32,7 +34,7 @@
     &__icon {
         width: 108px;
         text-align: center;
-        color: #ffffff;
+        color: #fff;
         font-size: 14px;
         font-weight: 500;
         img {
@@ -42,14 +44,14 @@
         }
     }
     &__link {
-        color: #ffffff;
+        margin-top: 18px;
+        color: #fff;
         font-size: 16px;
         font-weight: 500;
-        margin-top: 18px;
         a {
-            color: #ffffff;
-            text-transform: uppercase;
+            color: #fff;
             text-decoration: underline;
+            text-transform: uppercase;
         }
     }
 }
