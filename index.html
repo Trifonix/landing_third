@@ -125,7 +125,7 @@
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течение 10 минут
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input type="text" placeholder="Ваше имя" required name="name">
                 <input type="number" placeholder="Ваш телефон" required name="phone">
                 <input type="email" placeholder="Ваш E-mail" required name="email">
@@ -449,10 +449,6 @@
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="./src/js/slick.min.js"></script>
-    <script src="./src/js/script.js"></script>
 
     <!-- Делаем подвал с картой -->
     <footer class="footer">
@@ -475,9 +471,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__descr">и мы вам перезвоним в течение 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
-                <input type="text" placeholder="Ваше имя" required name="name">
-                <input type="number" placeholder="Ваш телефон" required name="phone">
-                <input type="email" placeholder="Ваш E-mail" required name="email">
+                <input type="text" placeholder="Ваше имя" name="name">
+                <input type="number" placeholder="Ваш телефон" name="phone">
+                <input type="email" placeholder="Ваш E-mail" name="email">
                 <button class="button button__submit" type="submit">Заказать консультацию</button>
             </form>
         </div>
@@ -500,5 +496,11 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./src/js/slick.min.js"></script>
+    <script src="./src/js/jquery.validate.min.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
