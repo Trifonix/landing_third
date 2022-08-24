@@ -91,4 +91,6 @@ $(document).ready(function(){
             scrollTop: $(anchor).offset().top - 60
         }, 800);
     });
+
+    new WOW().init();
 });
